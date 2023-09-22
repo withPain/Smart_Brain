@@ -74,6 +74,7 @@ class App extends Component {
       })
       .then(response => response.json())
       .then(response => {
+        console.log(response)
         if (response) {
           fetch('https://face-detection-backend-uouw.onrender.com/image', {
             method: 'put',
